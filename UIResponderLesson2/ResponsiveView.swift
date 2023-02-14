@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ResposiveView: UILabel {
+class ResponsiveView: UILabel {
     override var canBecomeFirstResponder: Bool {
         return true
     }
