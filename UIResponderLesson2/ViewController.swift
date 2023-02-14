@@ -35,8 +35,8 @@ class ViewController: UIViewController {
         
         let menu = UIMenuController()
         menu.arrowDirection = .default
-        menu.showMenu(from: responsiveLabel, rect: CGRect(x: 50, y: 50, width: 200, height: 200))
-        
+        menu.setTargetRect(responsiveLabel.frame, in: self.view)
+        menu.setMenuVisible(true, animated: true)
         
         let saveMenuItem = UIMenuItem(title: "Save", action: #selector(saveClicked))
         menu.menuItems = [saveMenuItem]
